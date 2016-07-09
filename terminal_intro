@@ -15,6 +15,10 @@ function program_is_installed {
 
 if [ "$(program_is_installed gnome-terminal)" == 1 ]; then
     gnome-terminal -e "./download_install $image $header $all"
-else
+    exit 1
+fi
+
+if [ "$(program_is_installed xfce4-terminal)" == 1 ]; then
     xfce4-terminal -e "./download_install $image $header $all"
+    exit 1
 fi
