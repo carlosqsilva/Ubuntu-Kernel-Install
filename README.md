@@ -1,6 +1,8 @@
 # Ubuntu Kernel Install
 Tool to install kernel in Ubuntu and derivatives
-![alt text](screenshots/generic.png "Generic Kernel") ![alt text](screenshots/lowlatency.png "Low Latency Kernel")
+
+![alt text](screenshots/generic.png "Generic Kernel")
+![alt text](screenshots/lowlatency.png "Low Latency Kernel")
 
 # Requirements
  - python3-bs4
