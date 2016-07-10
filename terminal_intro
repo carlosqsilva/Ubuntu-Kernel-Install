@@ -22,3 +22,13 @@ if [ "$(program_is_installed xfce4-terminal)" == 1 ]; then
     xfce4-terminal -e "./download_install $image $header $all"
     exit 1
 fi
+
+if [ "$(program_is_installed konsole)" == 1 ]; then
+    konsole -e "./download_install $image $header $all"
+    exit 1
+fi
+
+if [ "$(program_is_installed lxterminal)" == 1 ]; then
+    lxterminal -e "./download_install $image $header $all"
+    exit 1
+fi
