@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 #url = "http://kernel.ubuntu.com/~kernel-ppa/mainline/"
 
-def avaible_versions(url):
+def available_versions(url):
     content = requests.get(url).content
     soup = BeautifulSoup(content, 'lxml')
 

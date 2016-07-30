@@ -5,7 +5,7 @@ import os
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from subprocess import Popen
-from regulaexp import avaible_versions, get_filename
+from regulaexp import available_versions, get_filename
 
 class app(object):
     def __init__(self):
@@ -16,7 +16,7 @@ class app(object):
             self.arch = 'i386'
 
         self._url = "http://kernel.ubuntu.com/~kernel-ppa/mainline/"
-        self.linux_versions = avaible_versions(self._url)
+        self.linux_versions = available_versions(self._url)
         self.linux_versions.reverse()
 
         builder = Gtk.Builder()
